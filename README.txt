@@ -2,6 +2,9 @@
 The *.exe installer package is out of date.  Changes were made in Java8 that
 require me to rebuild the program.  Uploading the source for demonstrative purposes.
 
+Video Demonstration:
+https://www.youtube.com/watch?v=COMDHCKeN0g
+
 ================= MAS-345 Data Acquisition (2013) =================
 
 This software was developed by Kristofer Weisshaupt.  You can find more 
