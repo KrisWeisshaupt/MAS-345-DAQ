@@ -1,0 +1,266 @@
+.main {
+    backgroundColor: #202020;
+    secondaryColor: #ffd466;
+}
+
+.text-input:focused{
+    -fx-background-color: secondaryColor, -fx-text-box-border, -fx-control-inner-background;
+}
+
+.table-view:focused{
+    -fx-background-color: secondaryColor, -fx-text-box-border, -fx-control-inner-background;
+}
+
+/*.tooltip{
+-fx-background-radius: 0 0 0 0;
+-fx-background-color: linear-gradient(cyan , deepskyblue );
+-fx-text-fill: white;
+}
+
+.ttip{
+-fx-background-radius: 0 0 0 0;
+-fx-background-color: linear-gradient(cyan , deepskyblue );
+-fx-text-fill: white;
+}
+
+tooltip .page-corner {
+-fx-shape: " ";
+}*/
+
+
+.menu-button{
+    -fx-background-color:#ff2020;
+}
+
+.menu-button:pressed{
+    -fx-background-color:#cc0000;
+}
+
+.menu-button .label{
+    -fx-font: bold 13pt "Arial";
+    -fx-text-fill: white;
+}
+
+.choice-box .label{
+    -fx-font: bold 13pt "Arial";
+    -fx-text-fill: white;
+}
+
+.chart-symbol { /* solid circle */
+    -fx-background-color: blue;
+    -fx-background-radius: 3px;
+    -fx-padding: 3px;
+}
+
+#mainGrid {
+    -fx-background-color: #202020;
+    /*    -fx-border-color: #101010;
+        -fx-border-style: solid hidden hidden hidden;
+        -fx-border-width: 2;
+        -fx-border-insets: 0;*/
+}
+
+#portChoice .label {
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}
+
+.axis .label {
+    -fx-text-fill: white;
+
+}
+
+.label {
+    -fx-text-fill: black;
+}
+
+.whitelabel{
+    -fx-text-fill: white;
+}
+
+.hyperlink {
+    -fx-text-fill:secondaryColor;
+}
+
+.hyperlink:visited{
+    -fx-text-fill:darkgrey;
+}
+
+#buttonPane {
+    -fx-background-color: #353535;
+    -fx-background-radius: 4;
+    -fx-border-width: 2;
+    -fx-border-color: #ffd466;
+    -fx-border-radius: 3;
+}
+
+#lcdPane {
+    -fx-background-color: #555555;
+    -fx-border-width: 3;
+    -fx-border-color: #111111;
+} 
+
+#diodeImage {
+    -fx-image: url("./diode.png");
+}
+
+#status {
+    -fx-text-fill: white;
+}
+
+#statusPane{
+    -fx-background-color: #353535;
+    -fx-border-color: #101010;
+}
+
+#move{
+    -fx-border-color: #101010;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 2;
+}
+
+.mmbutton{
+    -fx-font: bold 13pt "Arial";
+    -fx-text-fill: white;
+    -fx-background-color: #666666;
+    -fx-background-radius: 6;
+    -fx-background-insets: 1;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-wrap-text: true;
+
+    /*    -fx-effect: innershadow(three-pass-box , rgba(0,0,0,.65) , 12 , 0.35 , 14.5 , 35);
+        -fx-effect: dropshadow(one-pass-box , black , 10 , 0.135 , 0 , 0);*/
+}
+
+.mmbutton:selected{
+
+    -fx-background-color: #494949;
+}
+
+.mmbutton:pressed{
+
+    -fx-background-color: #464646;
+
+}
+
+.mmbutton:armed{
+    -fx-background-color: #464646;
+}
+
+
+#connectToggle {
+    -fx-font: bold 14pt "Arial";
+    -fx-text-fill: white;
+    -fx-background-color: #e50000;
+    -fx-background-radius: 6;
+    -fx-background-insets: 1;
+    -fx-border-width: 1;
+    -fx-border-color: black;
+    -fx-border-radius: 5; 
+}
+
+#connectToggle:pressed {
+    -fx-font: bold 14pt "Arial";
+    -fx-background-color: #aa0000;
+}
+
+#connectToggle:selected{
+    -fx-font: bold 14pt "Arial";
+    -fx-background-color: #af0000;
+    /*    -fx-effect: innershadow(three-pass-box , rgba(0,0,0,.65) , 12 , 0.35 , 14.5 , 35);
+        -fx-effect: dropshadow(one-pass-box , black , 10 , 0.135 , 0 , 0);*/
+}
+
+#connStatus {
+    -fx-background-color: transparent;
+    -fx-background-image:url("./connected.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+
+.window {
+    -fx-background-color: backgroundColor;
+    -fx-background-radius: 3;
+    -fx-background-insets: 6;
+    -fx-border-color: secondaryColor;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-effect: dropshadow(gaussian, secondaryColor, 5, 0.1 , 0, 0);
+    -fx-border-insets:5;
+    -fx-padding: 0;
+}
+
+.windowMaxed {
+    -fx-background-radius: 0;
+    -fx-background-color: backgroundColor;
+    -fx-border-color: backgroundColor;
+    -fx-border-width: 0;
+    -fx-padding:0;
+}
+
+.windowButton {
+    -fx-border-color: secondaryColor;
+    -fx-background-color: backgroundColor;
+    -fx-background-insets: 1;
+    -fx-border-width: 1;
+}
+
+.windowButton:pressed {
+    -fx-background-color: secondaryColor;
+    -fx-border-color: radial-gradient(center 50% 50%, radius 90%, backgroundColor, transparent);
+}
+
+.windowButton:hover {
+    -fx-effect: dropshadow(two-pass-box, secondaryColor, 4, 0.2 , 0, 0);
+}
+
+/*
+Optional: set image as button background""
+    -fx-background-image:url("./min.png");
+
+Or use SVG paths:
+    Button Outline:  M1,1 V12 H12 V1 H1 Z M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12 
+    Button Corner cutoffs when Pressed:  M0,4 L4,0 M9,0 L13,4 M13,9 L9,13 M0,9 L4,13
+*/ 
+
+/*#icon {
+    -fx-image: url("./tinyIcon.png");
+}*/
+
+#title{
+    -fx-text-fill: white;
+}
+
+#minButton{
+    -fx-shape: "M1,1 V12 H12 V1 H1 Z M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M3,8 H10 V9 H3 V8 Z";
+}
+
+#minButton:pressed{
+    -fx-shape: "M1,1 V12 H12 V1 H1 Z M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M3,8 H10 V9 H3 V8 Z     M0,4 L4,0 M9,0 L13,4 M13,9 L9,13 M0,9 L4,13";
+}
+
+#closeButton{
+    -fx-shape: "M1,1 V12 H12 V1 H1 Z M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M4,3 L10,10 L4,4 L4,3 Z M9,3 L3,10 L9,4 L9,3 Z";
+}
+
+#closeButton:pressed{
+    -fx-shape: "M1,1 V12 H12 V1 H1 Z M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M4,3 L10,10 L4,4 L4,3 Z M9,3 L3,10 L9,4 L9,3 Z     M0,4 L4,0 M9,0 L13,4 M13,9 L9,13 M0,9 L4,13";
+}
+
+.maxButton{
+    -fx-shape: "M1,1 V12 H12 V1 H1 M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M3,3 V10 H10 V3 M3,4 H10 V3 H3";
+}
+
+.maxButton:pressed{
+    -fx-shape: "M1,1 V12 H12 V1 H1 Z M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M3,3 V10 H10 V3 M3,4 H10 V3 H3     M0,4 L4,0 M9,0 L13,4 M13,9 L9,13 M0,9 L4,13";
+}
+
+.unmaxButton{
+    -fx-shape: "M1,1 V12 H12 V1 H1 M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M3,5 V10 H8 V8 H10 V3 H5 V5 M3,5 H8, V8";
+}
+
+.unmaxButton:pressed{
+    -fx-shape: "M1,1 V12 H12 V1 H1 M0,1 V12 M1,0 H12 M1,13 H12 M13,1 V12     M3,5 V10 H8 V8 H10 V3 H5 V5 M3,5 H8, V8     M0,4 L4,0 M9,0 L13,4 M13,9 L9,13 M0,9 L4,13    ";
+}

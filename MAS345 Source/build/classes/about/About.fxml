@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="" minHeight="310.0" minWidth="500.0" pickOnBounds="false" prefHeight="310.0" prefWidth="500.0" styleClass="main" xmlns:fx="http://javafx.com/fxml" fx:controller="about.AboutController">
+  <children>
+    <GridPane id="mainGrid" pickOnBounds="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <children>
+            <Text fill="#ffd466" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.6" text="MAS-345 DAQ" textAlignment="CENTER">
+              <font>
+                <Font name="Arial Rounded MT Bold" size="30.0" />
+              </font>
+            </Text>
+            <Label id="textLabel" fx:id="nooleanLabel" alignment="BOTTOM_LEFT" contentDisplay="CENTER" prefHeight="47.000099999997474" prefWidth="249.0" styleClass="whitelabel" text="Noolean" textOverrun="CLIP" wrapText="true" />
+            <Hyperlink id="nooleanLink" focusTraversable="false" onAction="#emailFired" prefWidth="249.0" text="NooleanBot@gmail.com">
+              <font>
+                <Font name="System Bold" size="12.0" fx:id="x1" />
+              </font>
+            </Hyperlink>
+            <Hyperlink fx:id="nooleanLink" focusTraversable="false" font="$x1" onAction="#nooleanFired" prefWidth="249.0" text="http://nooleanbot.blogspot.com/" />
+            <ImageView fx:id="donate" fitHeight="47.0" fitWidth="122.0" onMouseClicked="#donateFired" pickOnBounds="true" preserveRatio="true">
+              <effect>
+                <InnerShadow choke="0.5476190476190477" height="9.0" radius="4.0" width="9.0">
+                  <input>
+                    <DropShadow height="31.0" radius="15.0" spread="0.3" width="31.0" />
+                  </input>
+                </InnerShadow>
+              </effect>
+              <image>
+                <Image url="@../skin/paypal_donate.gif" preserveRatio="false" smooth="false" />
+              </image>
+              <VBox.margin>
+                <Insets right="125.0" top="5.0" />
+              </VBox.margin>
+            </ImageView>
+            <Label fx:id="rxtxLabel" alignment="BOTTOM_LEFT" prefHeight="62.0" prefWidth="249.0" styleClass="whitelabel" text="RXTX" />
+            <Hyperlink fx:id="rxtxLink" focusTraversable="false" font="$x1" onAction="#rxtxFired" prefWidth="249.0" text="http://mfizz.com/oss/rxtx-for-java" />
+            <Label alignment="BOTTOM_LEFT" prefHeight="15.0" prefWidth="249.0" styleClass="whitelabel" text="Digital-7 font courtesy of Style-7:" />
+            <Hyperlink fx:id="fontLink" focusTraversable="false" font="$x1" onAction="#fontFired" prefWidth="249.0" text="http://www.styleseven.com/" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </VBox>
+        <ImageView fitHeight="300.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
+          <effect>
+            <DropShadow />
+          </effect>
+          <image>
+            <Image url="@../skin/MAS-345.jpg" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="237.0" minWidth="237.0" prefWidth="237.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+  <stylesheets>
+    <URL value="@../skin/skin.css" />
+  </stylesheets>
+</AnchorPane>
